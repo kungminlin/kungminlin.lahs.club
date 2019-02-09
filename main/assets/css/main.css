@@ -1,0 +1,44 @@
+@import url("font-awesome.min.css");
+@import url("fonts.css");
+
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: pink;
+}
+
+footer {
+  font-weight: 200;
+  text-align: center;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  min-height: calc(100vh - 80px);
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+  #wrapper > header {
+    text-align: center;
+  }
+
+.center {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
