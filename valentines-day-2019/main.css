@@ -1,0 +1,16 @@
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  font-family: "Cassandra", sans-serif;
+  padding: 10px;
+  background-color: pink;
+  color: white;
+}
