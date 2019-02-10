@@ -1326,7 +1326,7 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1545,6 +1545,13 @@ input, select, textarea {
 	form :-ms-input-placeholder {
 		color: #999;
 	}
+
+	.zodiac-img {
+		font-weight: bold;
+	}
+	/* .zodiac-img img {
+		right: 80px;
+	} */
 
 /* Section/Article */
 
@@ -2201,3 +2208,19 @@ input, select, textarea {
 			}
 
 		}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: pink;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: pink;
+}
