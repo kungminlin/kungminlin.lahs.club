@@ -2188,11 +2188,14 @@ input, select, textarea {
 			padding: 20px;
 			color: white;
 			overflow-y: auto;
-			max-height: 50vh;
+			max-height: 40vh;
 		}
 		.modal-content article::-webkit-scrollbar-track {
 			background: none;
 		}
+			.modal-content article b {
+				color: pink;
+			}
 		.close-modal {
 			position: absolute;
 			color: white;
