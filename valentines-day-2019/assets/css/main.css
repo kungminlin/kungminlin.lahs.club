@@ -1914,10 +1914,10 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		-moz-transition: opacity 1s ease-in-out;
-		-webkit-transition: opacity 1s ease-in-out;
-		-ms-transition: opacity 1s ease-in-out;
-		transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out, filter .5s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out, filter .5s ease-in-out;
+		-ms-transition: opacity 1s ease-in-out, filter .5s ease-in-out;
+		transition: opacity 1s ease-in-out, filter .5s ease-in-out;
 	}
 
 		body.is-preload #wrapper {
@@ -2159,6 +2159,53 @@ input, select, textarea {
 
 				}
 
+	.modal {
+		position: absolute;
+		display: block;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 70vw;
+		max-height: 70vh;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: 999;
+	}
+		.modal-content {
+			margin: 0;
+		}
+		.modal-content header h1 {
+			text-align: center;
+			margin-top: 1em;
+			color: white;
+		}
+		.modal-content hr {
+			width: 80%;
+			margin: 0 auto;
+		}
+		.modal-content article {
+			width: 100%;
+			padding: 20px;
+			color: white;
+			overflow-y: auto;
+			max-height: 50vh;
+		}
+		.modal-content article::-webkit-scrollbar-track {
+			background: none;
+		}
+		.close-modal {
+			position: absolute;
+			color: white;
+			right: 20px;
+			top: 10px;
+			font-size: 25px;
+			cursor: pointer;
+			transition: transform .5s;
+		}
+			.close-modal:hover {
+				transform: scale(1.2) rotate(20deg);
+			}
+
 /* Footer */
 
 	#footer {
@@ -2223,4 +2270,10 @@ input, select, textarea {
 
 ::-webkit-scrollbar-thumb:hover {
 	background-color: pink;
+}
+
+/* Firefox Implementation of Scrollbar Customization */
+html {
+	scrollbar-color: pink rgba(0, 0, 0, 0.8);
+	scrollbar-width: thin;
 }
