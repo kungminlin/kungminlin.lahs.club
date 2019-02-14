@@ -50,19 +50,19 @@ $(document).ready(function() {
   // Test Form
 
   // Match Form
-  $('#match-form input[name="birthdate"]').change(function() {
+  $('#match-form input[name="birthday"]').change(function() {
     $("#match-form .zodiac-img").text(getZodiac(new Date($(this).val().split("-").splice(1).join(" "))).name);
   })
 
-  $('#match-form input[type="button"]').click(function(e) {
-    $('#match-form input').each(function(i, input) {
-      if (!$(input).val() || $(input).val().trim().length == 0) {
-        alert('Please fill out all fields!');
-        throw new Error("Field not filled. Cannot proceed to submit because not all fields are filled.", "Cannot proceed to submit because fields are not filled.");
-      }
-    })
-    processMatch($('#match-form').serializeArray())
-  })
+  // $('#match-form input[type="button"]').click(function(e) {
+  //   $('#match-form input').each(function(i, input) {
+  //     if (!$(input).val() || $(input).val().trim().length == 0) {
+  //       alert('Please fill out all fields!');
+  //       throw new Error("Field not filled. Cannot proceed to submit because not all fields are filled.", "Cannot proceed to submit because fields are not filled.");
+  //     }
+  //   })
+  //   processMatch($('#match-form').serializeArray())
+  // })
 })
 
 function processLoveFortune(d) {
